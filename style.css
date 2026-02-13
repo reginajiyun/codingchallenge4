@@ -1,6 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c4096;
+   background-color: #1c4096; 
     margin: 0;
     padding: 20px;
+}
+.cow-1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 75%;
+    overflow: hidden;
+    z-index: 10;
+    animation: centerRotate 20s linear infinite;
+}
+
+@keyframes centerRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.cow-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
